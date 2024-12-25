@@ -11,7 +11,7 @@ public class OccurrenceOfACharInString {
     public static void main(String[] args) {
        // Occurrence of each character in a string
         String str = "This is a sample program";
-        Map<String,Long> map = Arrays.stream(str.split("")).map(String::toLowerCase).collect(Collectors.groupingBy(s->s,HashMap::new,Collectors.counting()));
+        Map<String, String> map = Arrays.stream(str.split("")).map(String::toLowerCase).collect(Collectors.groupingBy(s-> s,HashMap::new,Collectors.joining()));
         System.out.println(map);
         // Printing a map using method reference
         map.entrySet().forEach(System.out::println);

@@ -3,7 +3,7 @@ package com.interviewproblems;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class MapOfCharLengthAndNameWissen {
+public class MapOfCharLengthAndName {
 
     public static void main(String[] args) {
         String s = "mohan nagare vaibhav shukla homan vaibhva avc xyze";
